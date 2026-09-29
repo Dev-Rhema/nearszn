@@ -17,7 +17,7 @@ function ContractAddress() {
   }
 
   return (
-    <div className="flex w-full max-w-md items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
+    <div className="flex w-full max-w-md items-center justify-between gap-3 rounded-2xl border border-white/10 bg-linear-to-b from-white/7 to-white/2 px-4 py-3 shadow-inner shadow-black/20 backdrop-blur">
       <div className="min-w-0">
         <p className="text-[11px] uppercase tracking-widest text-white/40">
           Contract · NEAR
@@ -28,7 +28,7 @@ function ContractAddress() {
       </div>
       <button
         onClick={handleCopy}
-        className="flex shrink-0 items-center gap-1.5 rounded-xl border border-szn/40 bg-szn/10 px-3 py-2 text-xs font-semibold text-szn transition hover:bg-szn/20"
+        className="flex shrink-0 items-center gap-1.5 rounded-xl border border-szn/40 bg-linear-to-b from-szn/25 to-szn/5 px-3 py-2 text-xs font-semibold text-szn shadow-[0_0_20px_-6px_rgba(63,251,53,0.5)] transition hover:from-szn/35 hover:to-szn/10 hover:shadow-[0_0_25px_-4px_rgba(63,251,53,0.6)]"
       >
         {copied ? (
           <>
