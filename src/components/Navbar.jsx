@@ -1,8 +1,8 @@
 import sznLogo from "../assets/szn-logo.png";
 import { TelegramIcon, XIcon } from "./icons";
 
-// TODO: point these at the real X/Twitter and Telegram profiles.
-const X_LINK = "#";
+// TODO: point this at the real Telegram profile.
+const X_LINK = "https://x.com/nearszn";
 const TELEGRAM_LINK = "#";
 const BUY_LINK = "https://www.geckoterminal.com/near/pools/refv1-6677";
 
@@ -17,6 +17,8 @@ function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href={X_LINK}
+            target="_blank"
+            rel="noreferrer"
             aria-label="X / Twitter"
             className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition hover:border-szn/40 hover:text-szn"
           >
