@@ -1,9 +1,8 @@
 import sznLogo from "../assets/szn-logo.png";
 import { TelegramIcon, XIcon } from "./icons";
 
-// TODO: point this at the real Telegram profile.
 const X_LINK = "https://x.com/nearszn";
-const TELEGRAM_LINK = "#";
+const TELEGRAM_LINK = "https://t.me/NearSznCTO";
 const BUY_LINK = "https://www.geckoterminal.com/near/pools/refv1-6677";
 
 function Navbar() {
@@ -26,6 +25,8 @@ function Navbar() {
           </a>
           <a
             href={TELEGRAM_LINK}
+            target="_blank"
+            rel="noreferrer"
             aria-label="Telegram"
             className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition hover:border-szn/40 hover:text-szn"
           >
